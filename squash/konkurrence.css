@@ -1,0 +1,90 @@
+.sideoverskrift{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.konkurrencetekst{
+    text-align: center;
+    margin-left: 250px;
+    margin-right:250px;
+    margin-top: 30px;
+}
+
+/*laptop*/
+@media screen and (min-width:910px) {
+    /*kontaktformular*/
+    .contactformular {
+        border-radius: 10px;
+
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+
+        margin-bottom: 100px;
+
+        padding: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .field {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        border: 1px solid #FFB142;
+        border-radius: 8px;
+
+        outline: none;
+        display: flex;
+        background-color:#FFDB80;
+        font-size: 13pt;
+        color:#774233;
+    }
+
+    .field-textarea {
+        height: 300px;
+        width: 100%;
+
+        margin-top: 20px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+
+        border: 1px solid #FFB142;
+        border-radius: 8px;
+        background-color: #FFDB80;
+        color: #774233;
+
+        font-size: 13pt;
+        outline: none;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+
+        color: #774233;
+        background-color:#FFDB80;
+        font-size: 13pt;
+
+        border: none;
+        cursor: pointer;
+
+        width: 15%;
+        border-radius: 8px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+
+        transition: 0.5s;
+    }
+
+    .btn:hover {
+        background-color: #ff9c10;
+    }
+}
