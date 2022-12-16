@@ -59,6 +59,10 @@ a:hover{
         display: flex;
         justify-content: center;
     }
+
+    a:hover{
+        background-color: #FFB142;
+    }
 }
 
 /*LAPTOP*/

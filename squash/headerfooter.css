@@ -50,9 +50,19 @@ nav{
 /*RESPONSIV*/
 /*MOBIL*/
 @media screen and (max-width:910px) {
+    .navmobil a:hover{
+        background-color: #FFB142;
+    }
+    
     .mobillogo{
         position: relative;
         bottom: 15px;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobillogo:hover{
+        background-color: #FFB142;
     }
 
     .navmobil{
