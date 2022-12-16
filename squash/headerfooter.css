@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-/*GENERELLE REGLER*/
 body {
     background-color:#FFB142;
 }
@@ -21,6 +20,9 @@ a{
     background-color: #FFB142;
     border-radius: 20px;
     padding: 15px;
+
+    font-family: "DM Serif Display";
+    font-weight: 500;
 }
 
 a:hover{
@@ -32,9 +34,6 @@ a:hover{
 nav{
     display: flex;
     justify-content: center;
-    border-bottom: #774233 1.5px solid;
-    margin-left: 300px;
-    margin-right: 300px;
 }
 
 .logo:hover{
@@ -46,24 +45,70 @@ nav{
     justify-content: center;
 }
 
-footer{
-    background-color: #FFDB80;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    padding: 10px;
-}
 
 
 /*RESPONSIV*/
 /*MOBIL*/
 @media screen and (max-width:910px) {
+    .mobillogo{
+        position: relative;
+        bottom: 15px;
+    }
 
+    .navmobil{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navlaptop{
+        display: none;
+    }
+    
+    footer{
+        background-color: #FFDB80;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    
+        font-family: "Roboto";
+    
+    
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        justify-content: center;
+        position: fixed;
+    }
 }
 
 /*LAPTOP*/
 @media screen and (min-width: 910px) {
     .navmobil{
         display: none;
+    }
+
+    .navlaptop div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        background-color: #FFDB80;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    
+        font-family: "Roboto";
+
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }

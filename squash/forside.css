@@ -1,17 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .logo{
     display: flex;
     justify-content: center;
     margin-top: 100px;
     padding-bottom: 30px;
-}
-
-.menu{
-    border-top: #774233 1.5px solid;
-    display: flex;
-    justify-content: center;
-    margin-right: 300px;
-    margin-left: 300px;
-    padding-top: 30px;
 }
 
 
@@ -27,10 +24,59 @@ a{
     background-color: #FFB142;
     border-radius: 20px;
     padding: 15px;
+
+    font-family: "DM Serif Display";
+    font-weight: 500;
 }
 
 a:hover{
     background-color: #FFDB80;
     border-radius: 20px;
     padding: 15px;
+}
+
+/*RESPONSIV*/
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlaptop{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navlaptop a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+    main{
+        height: 610px;
+    }
+    
+    .navmobil{
+        display: none;
+    }
+
+    .menu{
+        border-top: #774233 1.5px solid;
+        display: flex;
+        justify-content: center;
+        margin-right: 300px;
+        margin-left: 300px;
+        padding-top: 30px;
+    }
 }

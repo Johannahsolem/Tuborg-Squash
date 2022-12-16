@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    font-family: "DM Serif Display";
+    font-weight: 500;
+}
+
+.tekstunderoverskrift{
+    text-align: center;
+}
+
+p{
+    font-family: "Roboto";
+}
+
+.kort{
+    border-radius: 10px;
+    height: auto;
+}
+
+.kort img{
+    border-radius: 10px;
+}
+
+.topbillede img{
+    width: 100%;
+}
+
+/*RESPONSIV*/
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    .navmobil{
+        display: block;
+    }
+
+    .sideoverskrift{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 16pt;
+    }
+
+    .tekstunderoverskrift{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .medalkohol, .udenalkohol{
+        margin-left: 30px;
+        margin-bottom: 5px;
+        font-size: 13pt;
+    }
+
+    .kort div{
+        display: flex;
+        flex-direction: column;
+
+        background-color:#FFDB80;
+
+        border-radius: 10px;
+        height: auto;
+
+        margin-bottom: 10px;
+    }
+
+    .kort{
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .opskrifttekst{
+        padding: 20px;
+    }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+    .navlaptop{
+        flex-direction: column;
+    }
+    
+    .sideoverskrift{
+        display: flex;
+        justify-content: center;
+    
+        font-family: "Kreon";
+        font-size: 18pt;
+
+        margin-top: 30px;
+    }
+
+    .tekstunderoverskrift{
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .medalkohol, .udenalkohol{
+        margin-left: 145px;
+        margin-bottom: 10px;
+    }
+
+    .kort{
+        display: flex;
+        flex-direction: row;
+
+        border-radius: 10px;
+        max-height: 292px;
+
+        margin-bottom: 100px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .kort .opskrifttekst{
+        padding: 50px;
+        background-color:#FFDB80;
+        border-radius: 10px;
+        margin-left: 25px;
+    }
+}
