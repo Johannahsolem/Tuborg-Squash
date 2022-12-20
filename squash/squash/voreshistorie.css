@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+h2{
+  font-family: "DM Serif Display";
+    font-weight: 500;
+}
+
+.sideoverskrift{
+  font-family: "DM Serif Display";
+}
+
+p{
+    font-family: "Roboto";
+}
+
+.teksttilvoreshistorie{
+  text-align: center;
+}
+
+.topbillede img{
+    width: 100%;
+}
+
+.tidslinje img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*RESPONSIV*/
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    main{
+      height: 1650px;
+    }
+    
+    .sideoverskrift{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .teksttilvoreshistorie{
+      padding: 20px;
+    }
+
+    .tidslinje::after{
+      left: 31px;
+    }
+
+    /* Linjen */
+    .tidslinje {
+      padding-top: 50px;
+      position: relative;
+    }
+    
+    .content{
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px;
+    }
+
+
+    /* Linjen */
+    .tidslinje::after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      background-color: #FFDB80;
+      top: 0;
+      bottom: 0;
+      left: 10%;
+      margin-left: -3px;
+    }
+
+    /* Container og indhold */
+    .container {
+      padding: 10px;
+      position: relative;
+      background-color: inherit;
+      margin-left: 40px;
+    }
+  
+    /* Indhold - content */
+    .content {
+      background-color: #FFDB80;
+      position: relative;
+      border-radius: 10px;
+    }
+
+    footer{
+      margin-top: 900px;
+    }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+    .navlaptop{
+        flex-direction: column;
+    }
+
+    .sideoverskrift{
+        display: flex;
+        justify-content: center;
+        padding:20px;
+        margin-left: 400px;
+        margin-right: 400px;
+
+        font-size: 18pt;
+    }
+
+  .teksttilvoreshistorie{
+    margin-left: 300px;
+    margin-right:300px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    font-size: 13pt;
+  }
+  
+  /* Linjen */
+  .tidslinje {
+    padding-top: 100px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Linjen */
+  .tidslinje::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #FFDB80;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+    /* Container og indhold */
+    .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+      }
+      
+      /* Container left*/
+      .left {
+        left: 0;
+      }
+      
+      /* Container right */
+      .right {
+        left: 50%;
+      }
+      
+      /* Indhold - content */
+      .content {
+        padding: 20px 30px;
+        background-color: #FFDB80;
+        position: relative;
+        border-radius: 10px;
+      }
+}

@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#FFB142;
+}
+
+p, h2, h1{
+    color: #774233;
+}
+
+a{
+    text-decoration: none;
+    color: #774233;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #FFB142;
+    border-radius: 20px;
+    padding: 15px;
+
+    font-family: "DM Serif Display";
+    font-weight: 500;
+}
+
+a:hover{
+    background-color: #FFDB80;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.logo:hover{
+    background-color: #FFB142;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*RESPONSIV*/
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    .navmobil a:hover{
+        background-color: #FFB142;
+    }
+    
+    .mobillogo{
+        position: relative;
+        bottom: 15px;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobillogo:hover{
+        background-color: #FFB142;
+    }
+
+    .navmobil{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navlaptop{
+        display: none;
+    }
+    
+    footer{
+        background-color: #FFDB80;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    
+        font-family: "Roboto";
+    
+    
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        justify-content: center;
+        position: fixed;
+    }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+    .navmobil{
+        display: none;
+    }
+
+    .navlaptop div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        background-color: #FFDB80;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    
+        font-family: "Roboto";
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
